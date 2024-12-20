@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+.row-filler {
+    display: grid;
+    grid-template-columns: 20% 65% 15%;
+    justify-content: space-evenly;
+    justify-items: center;
+    
+    width: 100%;
+    background-image: linear-gradient(#000 0%, #0000 15%, #ffffff5d 40%, #ffffff7a 60%, #0000 85%, #000 100%);
+    padding: 0 8px;
+    box-shadow: 2px 2px 7px rgb(23, 23, 56), 2px 2px 7px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    margin-top:20px;
+}
+.row-filler-day{
+    display: grid;
+    grid-template-columns: 20% 45% 15% 20%;
+    justify-content: space-evenly;
+    justify-items: center;
+    
+    width: 100%;
+    background-image: linear-gradient(#000 0%, #0000 15%, #ffffff5d 40%, #ffffff7a 60%, #0000 85%, #000 100%);
+    padding: 0 8px;
+    box-shadow: 2px 2px 7px rgb(23, 23, 56), 2px 2px 7px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    margin-top:20px;
+}
+
+
+.t1 {
+    margin-top: -10px;
+    transform: rotateX(78deg);
+    color: #555;
+}
+
+.t2 {
+    margin-top: -10px;
+    transform: rotateX(38deg);
+    color: #999;
+}
+
+.m {
+    transform: scale(1.05);
+}
+
+.b2 {
+    transform: rotateX(322deg);
+    margin-bottom: -10px;
+    color: #888;
+}
+
+.b1 {
+    transform: rotateX(282deg);
+    margin-bottom: -10px;
+    color: #444;
+}
+
+.rf-inpt {
+    background-color: transparent;
+    height: 20px;
+    width: 170px;
+    align-self: center;
+    padding: 20px 10px;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    text-indent: 30px;
+}
+
+
+.t1:hover, .t2:hover, .m:hover, .b1:hover, .b2:hover {
+    color: purple;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.add-row{
+    position: absolute;
+    background-color: rgba(245, 222, 179, 0.199);
+    box-shadow: 2px 2px 7px rgb(23, 23, 56), 2px 2px 7px rgb(0, 0, 0, 0.2);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    left: 98px;
+    top: 42.5px;
+}
+
+.add-row>img{
+    width:20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color:transparent;
+}
+

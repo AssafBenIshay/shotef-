@@ -1,0 +1,32 @@
+[
+  {
+    "user": {
+      "iddatecreated": "1730060171512",
+      "uname": "aaa",
+      "email": "aaa@aaa",
+      "password": "Aa111111",
+      "logindate": "24/10/24",
+      "settings": {
+        "theme": "dark",
+        "font": "Roboto",
+        "fontsize": "16",
+        "subscription": "regular"
+      }
+    }
+  },
+  {
+    "user": {
+      "iddatecreated": "1730060200259",
+      "uname": "bbb",
+      "email": "bbb@bbb",
+      "password": "Bb222222",
+      "logindate": "25/10/24",
+      "settings": {
+        "theme": "light",
+        "font": "novio",
+        "fontsize": "14",
+        "subscription": "premium"
+      }
+    }
+  }
+]
