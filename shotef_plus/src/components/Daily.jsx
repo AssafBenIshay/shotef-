@@ -187,7 +187,7 @@ export default function Daily(params) {
     //fillSetExchange()
 
     React.useEffect(() => {
-        //getExchangeData()
+        getExchangeData()
 
 
 
