@@ -7,7 +7,7 @@ import SettingsBtn from './components/elements/SettingsBtn'
 import TimeP from './components/elements/TimeP'
 import Title from './components/elements/Title'
 import { ToastContainer, toast } from 'react-toastify';
-import "/react-toastify/dist/ReactToastify.css";
+import "./ReactToastify.css";
 import React from 'react'
 
 
