@@ -14,39 +14,39 @@ import React from 'react'
 
 function App() {
   const [showMaam, setShowMaam] = React.useState(undefined)
-  const [showGviya,setShowGviya] = React.useState(undefined)
-  const [showPrisa,setShowPrisa] = React.useState(undefined)
+  const [showGviya, setShowGviya] = React.useState(undefined)
+  const [showPrisa, setShowPrisa] = React.useState(undefined)
   const [logedInUser, setLogedInUser] = React.useState(false)
   const [stat, setStat] = React.useState('menu')
-  const [screen,setScreen] = React.useState('')
-  
+  const [screen, setScreen] = React.useState('')
+
   function selectScreen() {
     if (stat === 'Maam') {
-      setScreen(<Maam setShowMaam={setShowMaam} setStat={setStat} stat={stat}/>)
+      setScreen(<Maam setShowMaam={setShowMaam} setStat={setStat} stat={stat} />)
     } else if (stat === 'Gviya') {
-      setScreen(<Gviya setShowGviya={setShowGviya} setStat={ setStat} stat={stat} />)
-    } else if (stat === 'Prisa'){
-      setScreen(<Prisa setShowGviya={setShowGviya} setStat={ setStat} stat={stat} />)
-    } else if (stat === ''){
+      setScreen(<Gviya setShowGviya={setShowGviya} setStat={setStat} stat={stat} />)
+    } else if (stat === 'Prisa') {
+      setScreen(<Prisa setShowGviya={setShowGviya} setStat={setStat} stat={stat} />)
+    } else if (stat === '') {
       setScreen('')
     }
   }
 
   React.useEffect(() => {
     selectScreen()
-  },[stat])
+  }, [stat])
 
 
   return (
     <div className='App' id='App'>
       <div className='top-bar'>
-      {/* <SettingsBtn /> */}
-      <TimeP />
+        {/* <SettingsBtn /> */}
+        <TimeP />
       </div>
       <Title text='➕שוטף' size='40' />
 
       {screen}
-      
+
       {/* {showMaam ?
         <Maam setShowMaam={setShowMaam} setStat={setStat} stat={stat}/> :''
       }
@@ -63,7 +63,7 @@ function App() {
       />}
 
 
-      
+
       <ToastContainer position='top-center' theme='dark' closeOnClick={true} />
     </div>
   )

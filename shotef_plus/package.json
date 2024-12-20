@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react_toastify": "^10.9.0"
+    "react-toastify": "^11.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

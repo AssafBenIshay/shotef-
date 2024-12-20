@@ -33,8 +33,8 @@ export default function Gviya({ setStat, stat }) {
     const [totalDebt, setTotalDebt] = React.useState(0)
     const [totalPayment, setTotalPayment] = React.useState(0)
     const [shotef, setShotef] = React.useState(0)
-    const total = React.useRef(0)
-    const rowFillerSum = React.useRef(0)
+    var total = React.useRef(0)
+    var rowFillerSum = React.useRef(0)
 
     React.useEffect(() => {
 
