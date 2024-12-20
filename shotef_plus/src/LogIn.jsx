@@ -8,7 +8,6 @@ import peppy from './assets/peppyUser.png';
 import usersJson from './DB/users.json';
 import userscopyJson from './DB/userscopy.json'
 import closeX from './assets/close-X.png'
-import * as fs from 'node:fs'
 
 export default function LogIn({ setLogedInUser }) {
     const [uName, setUName] = React.useState('')
@@ -203,15 +202,6 @@ export default function LogIn({ setLogedInUser }) {
         setUsersArray(arr)
         setIsRegisteredUser(true)
 
-        // const currentUsersData = fs.readFileSync(userscopyJson)
-        // const jsonData = JSON.parse(currentUsersData)
-
-        // jsonData.push(newUser)
-
-        // fs.writeFileSync(userscopyJson, JSON.stringify(jsonData), 'utf-8', (err) => {
-        //     if (err) throw err; 
-        //     console.log('data added to file');
-        // })
 
         toast(`יצרת חשבון חדש בהצלחה! ברוך הבא ${nameInput}`, { type: 'success', rtl: true, icon: peppy })
 
@@ -226,7 +216,7 @@ export default function LogIn({ setLogedInUser }) {
         jsonData.push(userObj)
 
         fs.writeFileSync(userscopyJson, JSON.stringify(jsonData), 'utf-8', (err) => {
-            if (err) throw err; 
+            if (err) throw err;
             console.log('data added to file');
         })
     }
