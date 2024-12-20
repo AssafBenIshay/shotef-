@@ -1,4 +1,3 @@
-
 # Shotef
 
 Shotef is a web application designed for salesmen who collect debts from clients. It helps to calculate the delay averages of the deposited checks of the client.
